@@ -13,3 +13,4 @@ df=df[["ID_Producto","Producto"]]
 
 #guardo el parquet del dim para producto
 df.to_parquet("silver_archivosParquet/dim_producto.parquet",index=False)
+df.to_excel("silver_archivosParquet/dim_producto.xlsx",index=False)

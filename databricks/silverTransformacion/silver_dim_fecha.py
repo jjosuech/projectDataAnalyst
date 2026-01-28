@@ -18,3 +18,4 @@ dim_Fecha=dim_Fecha[["ID_Fecha","Fecha","Año","Mes","dia","mes_nombre"]]
 
 #guardamos mi parquet 
 dim_Fecha.to_parquet("silver_archivosParquet/dim_fecha.parquet",index=False)
+dim_Fecha.to_excel("silver_archivosParquet/dim_fecha.xlsx",index=False)

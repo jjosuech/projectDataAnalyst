@@ -13,3 +13,4 @@ dim_cliente=dim_cliente[["ID_Cliente","Cliente"]]
 
 #guardo el parquet del dim para cliente
 dim_cliente.to_parquet("silver_archivosParquet/dim_cliente.parquet",index=False)
+dim_cliente.to_excel("silver_archivosParquet/dim_cliente.xlsx",index=False)
